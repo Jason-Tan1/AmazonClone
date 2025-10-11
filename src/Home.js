@@ -31,9 +31,9 @@ function Home() {
         image="https://images-na.ssl-images-amazon.com/images/I/6182S7MYC2L._AC_SX425_.jpg"
         rating={5}/>
         <Product 
-        title="New Apple iPad Pro"
+        title="Wilson Evolution Black Edition Official Basketball"
         price={598.99}
-        image="https://images-na.ssl-images-amazon.com/images/I/81aAz0v7-GL._AC_SX425_.jpg"
+        image="https://cdn.shoplightspeed.com/shops/641570/files/63496261/300x250x2/wilson-wilson-basketball-evolution-285-game-ball-s.jpg"
         rating={4}/>
         </div>
 
