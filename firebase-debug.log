@@ -1,0 +1,93 @@
+[debug] [2025-10-13T18:05:06.486Z] ----------------------------------------------------------------------
+[debug] [2025-10-13T18:05:06.488Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jatan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-10-13T18:05:06.488Z] CLI Version:   14.19.1
+[debug] [2025-10-13T18:05:06.488Z] Platform:      win32
+[debug] [2025-10-13T18:05:06.488Z] Node Version:  v22.20.0
+[debug] [2025-10-13T18:05:06.489Z] Time:          Mon Oct 13 2025 14:05:06 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2025-10-13T18:05:06.489Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-13T18:05:06.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-13T18:05:06.667Z] > authorizing via signed-in user (jatan2745@gmail.com)
+[debug] [2025-10-13T18:05:06.667Z] [iam] checking project clone-fe64c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-10-13T18:05:06.668Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:06.668Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:06.670Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c:testIamPermissions [none]
+[debug] [2025-10-13T18:05:06.670Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c:testIamPermissions x-goog-quota-user=projects/clone-fe64c
+[debug] [2025-10-13T18:05:06.670Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T18:05:06.953Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c:testIamPermissions 200
+[debug] [2025-10-13T18:05:06.954Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-10-13T18:05:06.954Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:06.955Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:06.955Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c [none]
+[debug] [2025-10-13T18:05:07.183Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c 200
+[debug] [2025-10-13T18:05:07.183Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c {"projectId":"clone-fe64c","projectNumber":"581878934549","displayName":"AmazonClone","name":"projects/clone-fe64c","resources":{"hostingSite":"clone-fe64c"},"state":"ACTIVE","etag":"1_88f73cc2-ba72-4513-9958-fd07479d7f85"}
+[info] 
+[info] === Deploying to 'clone-fe64c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-10-13T18:05:07.188Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:07.188Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:07.189Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions [none]
+[debug] [2025-10-13T18:05:07.189Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-10-13T18:05:07.843Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions 200
+[debug] [2025-10-13T18:05:07.843Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions {"name":"projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[clone-fe64c]: beginning deploy... 
+[info] i  hosting[clone-fe64c]: found 9 files in build 
+[debug] [2025-10-13T18:05:07.858Z] [hosting] uploading with 200 concurrency
+[debug] [2025-10-13T18:05:08.122Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.122Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.124Z] [hosting] hash cache [YnVpbGQ] stored for 9 files
+[debug] [2025-10-13T18:05:08.124Z] [hosting][hash queue][FINAL] {"max":260,"min":12,"avg":42.44444444444444,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":265}
+[debug] [2025-10-13T18:05:08.125Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08:populateFiles [none]
+[debug] [2025-10-13T18:05:08.125Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08:populateFiles {"files":{"/index.html":"a77367f7f630a9cb9cdb469fb7ca36bc33a031e887f34bd47bf47aa108a0b8e2","/asset-manifest.json":"42328a0bb5de55663aa1c0c2ea4bf3b63c501babf9ddf32c41a64f581cb787c6","/static/js/main.4961da72.js.LICENSE.txt":"722a6cd5d9d4f395c831715375c49bf8815d0f13d27f5c81301a1841e2943c96","/static/js/453.572d7765.chunk.js":"70398d64c6a576abb02482bfdaf4a29ae8d46418d8e28b1b2ce69bafcc482e00","/static/js/453.572d7765.chunk.js.map":"55001229c1c80697c867fc72f5febf2f12daba5d8c887c0b967fadb97922a669","/static/css/main.603408e0.css.map":"0966258a2c3098920afa598a10cc57fbaec1ad94cae6303397f9f3d93bcfdfef","/static/css/main.603408e0.css":"dc886b823f62b4d1c5daaddc741382b68472310e3d1c4a337d6cece20f153c27","/static/js/main.4961da72.js":"0190d1d93256aa956b95e570fd7c6d7f4efd7d0e3411acc903c11f9a339dab33","/static/js/main.4961da72.js.map":"405bc44492769a396e8404b8d74b8bcd7b941a5384c530751fc594b8838c1604"}}
+[debug] [2025-10-13T18:05:08.274Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08:populateFiles 200
+[debug] [2025-10-13T18:05:08.274Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clone-fe64c/versions/2024c3e4e986ed08/files"}
+[debug] [2025-10-13T18:05:08.275Z] [hosting][populate queue][FINAL] {"max":153,"min":153,"avg":153,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":153}
+[debug] [2025-10-13T18:05:08.275Z] [hosting] uploads queued: 0
+[debug] [2025-10-13T18:05:08.275Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1760378708275}
+[info] i  hosting: upload complete 
+[info] +  hosting[clone-fe64c]: file upload complete 
+[debug] [2025-10-13T18:05:08.276Z] [hosting] deploy completed after 430ms
+[debug] [2025-10-13T18:05:08.276Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-fe64c"
+    },
+    "version": "projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08"
+  }
+]
+[info] i  hosting[clone-fe64c]: finalizing version... 
+[debug] [2025-10-13T18:05:08.277Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.277Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.278Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions/2024c3e4e986ed08 updateMask=status%2Cconfig
+[debug] [2025-10-13T18:05:08.278Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions/2024c3e4e986ed08 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-10-13T18:05:08.433Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions/2024c3e4e986ed08 200
+[debug] [2025-10-13T18:05:08.434Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/versions/2024c3e4e986ed08 {"name":"projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-10-13T18:05:07.338524Z","createUser":{"email":"jatan2745@gmail.com"},"finalizeTime":"2025-10-13T18:05:08.215034Z","finalizeUser":{"email":"jatan2745@gmail.com"}}
+[debug] [2025-10-13T18:05:08.434Z] [hosting] finalized version for clone-fe64c:[object Object]
+[info] +  hosting[clone-fe64c]: version finalized 
+[info] i  hosting[clone-fe64c]: releasing new version... 
+[debug] [2025-10-13T18:05:08.435Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.435Z] Checked if tokens are valid: true, expires at: 1760381300851
+[debug] [2025-10-13T18:05:08.435Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/channels/live/releases versionName=projects%2F581878934549%2Fsites%2Fclone-fe64c%2Fversions%2F2024c3e4e986ed08
+[debug] [2025-10-13T18:05:08.436Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/channels/live/releases {}
+[debug] [2025-10-13T18:05:08.609Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/channels/live/releases 200
+[debug] [2025-10-13T18:05:08.609Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-fe64c/channels/live/releases {"name":"projects/581878934549/sites/clone-fe64c/channels/live/releases/1760378707811000","version":{"name":"projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-10-13T18:05:07.338524Z","createUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"},"finalizeTime":"2025-10-13T18:05:08.215034Z","finalizeUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"}},"type":"DEPLOY","releaseTime":"2025-10-13T18:05:07.811Z","releaseUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"}}
+[debug] [2025-10-13T18:05:08.610Z] [hosting] release: {"name":"projects/581878934549/sites/clone-fe64c/channels/live/releases/1760378707811000","version":{"name":"projects/581878934549/sites/clone-fe64c/versions/2024c3e4e986ed08","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-10-13T18:05:07.338524Z","createUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"},"finalizeTime":"2025-10-13T18:05:08.215034Z","finalizeUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"}},"type":"DEPLOY","releaseTime":"2025-10-13T18:05:07.811Z","releaseUser":{"email":"jatan2745@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKElSwKJBlnFQ3g-Yp_BULAWQxGaPcMi_QdaYtg_Sq6QfZUd0zl"}}
+[info] +  hosting[clone-fe64c]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/clone-fe64c/overview
+[info] Hosting URL: https://clone-fe64c.web.app
