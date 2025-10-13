@@ -1,21 +1,41 @@
 import React, { useState } from 'react';
 import './Login.css'
-import {Link} from "react-router-dom";
-
+import {Link, useNavigate} from "react-router-dom";
+import {auth} from "./firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login() {
-
+const navigate = useNavigate();
 const [email, setEmail] = useState ('');
 const [password, setPassword] = useState ('');
 const signIn = e => {
   e.preventDefault()
+  signInWithEmailAndPassword(auth, email, password)
+    .then((auth) => {
+      //Succssfully signed in with email and password
+      if (auth) {
+        navigate('/')
+      }
+    console.log(auth); 
+  } )
+  .catch(error => alert(error.message))
 }
 
 const register = e => {
   e.preventDefault()
+    createUserWithEmailAndPassword(auth, email, password)
+    .then((auth) => {
+      //Succssfully created a new user with email and password
+      if (auth) {
+        navigate('/')
+      }
+    console.log(auth); 
+  } )
+  .catch(error => alert(error.message))
 }
 
-  return (
+  return (  
     <div className = 'login'>
       <Link to = '/'> 
       <img className = 'login_logo' src = 'https://thumbs.dreamstime.com/b/amazon-logo-amazon-logo-white-background-vector-format-avaliable-124289859.jpg' />
@@ -27,9 +47,10 @@ const register = e => {
           <h5>E-mail</h5>
           <input type = 'text' value = {email} onChange = {e => setEmail(e.target.value)}/>
           <h5>Password</h5>
-          <input type = 'password'/>
+          <input type = 'password' value = {password} onChange = {e => setPassword(e.target.value)} />
 
-          <button type = 'submit' onClick = {register} className = 'login_registerButton' value = {password} onChange = {e => setPassword(e.target.value)}> 
+          <button type = 'submit' onClick = {signIn} 
+          className = 'login_registerButton' value = {password} onChange = {e => setPassword(e.target.value)}> 
             Sign In
           </button>
           </form>
@@ -38,7 +59,9 @@ const register = e => {
             Cookies Notice and our Interest-Based Ads Notice.
           </p>
 
-          <button type = 'submit' onClick = {signIn} className ='login_signInButton'>Create your Amazon Account</button>
+          <button type = 'submit' onClick = {register} 
+          className ='login_signInButton' value = {password} onChange = {e => setPassword(e.target.value)} 
+          >Create your Amazon Account</button>
       </div>
     </div>
   )
