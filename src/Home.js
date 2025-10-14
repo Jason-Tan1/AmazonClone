@@ -32,7 +32,7 @@ function Home() {
         rating={5}/>
         <Product 
         title="Wilson Evolution Black Edition Official Basketball"
-        price={598.99}
+        price={98.99}
         image="https://cdn.shoplightspeed.com/shops/641570/files/63496261/300x250x2/wilson-wilson-basketball-evolution-285-game-ball-s.jpg"
         rating={4}/>
         </div>

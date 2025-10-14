@@ -35,13 +35,15 @@
   background-color: #cd9042;
 }
 
-.header_optionLineOne {
+.header_optionLineOne { 
   font-size: 10px;
+  text-decoration: none;
 }
 
 .header_OptionLineTwo {
   font-size: 10px;
   font-weight: 800;
+  text-decoration: none;  
 }
 
 .header_optionBasket {
@@ -69,4 +71,3 @@
   margin-right: 10px;
   color: white;
 }
-
