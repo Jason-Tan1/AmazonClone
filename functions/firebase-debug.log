@@ -1,0 +1,1233 @@
+[debug] [2025-10-14T16:54:28.039Z] ----------------------------------------------------------------------
+[debug] [2025-10-14T16:54:28.044Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jatan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-10-14T16:54:28.044Z] CLI Version:   14.19.1
+[debug] [2025-10-14T16:54:28.045Z] Platform:      win32
+[debug] [2025-10-14T16:54:28.045Z] Node Version:  v22.20.0
+[debug] [2025-10-14T16:54:28.045Z] Time:          Tue Oct 14 2025 12:54:28 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2025-10-14T16:54:28.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-14T16:54:28.288Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-14T16:54:28.289Z] > authorizing via signed-in user (jatan2745@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting, extensions"}}
+[debug] [2025-10-14T16:54:28.293Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:28.293Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:28.294Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-fe64c/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-10-14T16:54:28.294Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-fe64c/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/clone-fe64c
+[debug] [2025-10-14T16:54:28.654Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-fe64c/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-10-14T16:54:28.654Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-fe64c/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-10-14T16:54:28.657Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:28.657Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:28.657Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c [none]
+[debug] [2025-10-14T16:54:28.959Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c 200
+[debug] [2025-10-14T16:54:28.959Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clone-fe64c {"projectNumber":"581878934549","projectId":"clone-fe64c","lifecycleState":"ACTIVE","name":"AmazonCloneJasonTan","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-10-01T20:39:16.243390Z"}
+[debug] [2025-10-14T16:54:28.978Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-14T16:54:28.978Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-14T16:54:28.978Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-10-14T16:54:28.984Z] Emulator locator file path: C:\Users\jatan\AppData\Local\Temp\hub-clone-fe64c.json
+[debug] [2025-10-14T16:54:28.985Z] [hub] writing locator at C:\Users\jatan\AppData\Local\Temp\hub-clone-fe64c.json
+[debug] [2025-10-14T16:54:28.996Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-10-14T16:54:29.004Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-14T16:54:29.004Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-14T16:54:29.005Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-14T16:54:29.005Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-10-14T16:54:29.026Z] defaultcredentials: writing to file C:\Users\jatan\AppData\Roaming\firebase\jatan2745_gmail_com_application_default_credentials.json
+[debug] [2025-10-14T16:54:29.028Z] Setting GAC to C:\Users\jatan\AppData\Roaming\firebase\jatan2745_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\jatan\\AppData\\Roaming\\firebase\\jatan2745_gmail_com_application_default_credentials.json"}}
+[debug] [2025-10-14T16:54:29.029Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.029Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.029Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/adminSdkConfig [none]
+[debug] [2025-10-14T16:54:29.400Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/adminSdkConfig 200
+[debug] [2025-10-14T16:54:29.400Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/adminSdkConfig {"projectId":"clone-fe64c","storageBucket":"clone-fe64c.firebasestorage.app"}
+[debug] [2025-10-14T16:54:29.417Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.417Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.417Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-fe64c/sites 
+[debug] [2025-10-14T16:54:29.915Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-fe64c/sites 200
+[debug] [2025-10-14T16:54:29.915Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-fe64c/sites {"sites":[{"name":"projects/clone-fe64c/sites/clone-fe64c","defaultUrl":"https://clone-fe64c.web.app","appId":"1:581878934549:web:d5a2148bf2653d1c3ef21c","type":"DEFAULT_SITE"}]}
+[debug] [2025-10-14T16:54:29.916Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.916Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:29.916Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/webApps/1:581878934549:web:d5a2148bf2653d1c3ef21c/config [none]
+[debug] [2025-10-14T16:54:30.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/webApps/1:581878934549:web:d5a2148bf2653d1c3ef21c/config 200
+[debug] [2025-10-14T16:54:30.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c/webApps/1:581878934549:web:d5a2148bf2653d1c3ef21c/config {"projectId":"clone-fe64c","appId":"1:581878934549:web:d5a2148bf2653d1c3ef21c","storageBucket":"clone-fe64c.firebasestorage.app","apiKey":"AIzaSyBGKIMmY7Q0onblhXkThFcWgP74CmNxqhY","authDomain":"clone-fe64c.firebaseapp.com","messagingSenderId":"581878934549","measurementId":"G-6FBJRP5R2E","projectNumber":"581878934549","version":"2"}
+[debug] [2025-10-14T16:54:30.277Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:30.277Z] Checked if tokens are valid: true, expires at: 1760463392076
+[debug] [2025-10-14T16:54:30.278Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c [none]
+[debug] [2025-10-14T16:54:30.508Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c 200
+[debug] [2025-10-14T16:54:30.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fe64c {"projectId":"clone-fe64c","projectNumber":"581878934549","displayName":"AmazonCloneJasonTan","name":"projects/clone-fe64c","resources":{"hostingSite":"clone-fe64c"},"state":"ACTIVE","etag":"1_4b0dec3d-dad5-4979-996a-0c2d0ff60ca2"}
+[info] i  hosting[clone-fe64c]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-fe64c]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-10-14T16:54:30.534Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-10-14T16:54:30.654Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-10-14T16:54:30.654Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-10-14T16:54:31.348Z] Data is 3538469
+[debug] [2025-10-14T16:54:31.348Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.348Z] [unzip] Processing entry: client\
+[debug] [2025-10-14T16:54:31.348Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2025-10-14T16:54:31.350Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-10-14T16:54:31.350Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-10-14T16:54:31.350Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.350Z] [unzip] Writing file: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2025-10-14T16:54:31.351Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-10-14T16:54:31.351Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-10-14T16:54:31.351Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.351Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2025-10-14T16:54:31.356Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-10-14T16:54:31.356Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-10-14T16:54:31.356Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.356Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2025-10-14T16:54:31.358Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-10-14T16:54:31.358Z] [unzip] Processing entry: client\index.html
+[debug] [2025-10-14T16:54:31.358Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.358Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2025-10-14T16:54:31.360Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-10-14T16:54:31.360Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-10-14T16:54:31.360Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.361Z] [unzip] Writing file: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2025-10-14T16:54:31.361Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-10-14T16:54:31.361Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-10-14T16:54:31.361Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.362Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2025-10-14T16:54:31.363Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-10-14T16:54:31.363Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-10-14T16:54:31.363Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.363Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2025-10-14T16:54:31.364Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-10-14T16:54:31.364Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-10-14T16:54:31.365Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.365Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2025-10-14T16:54:31.367Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-10-14T16:54:31.367Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-10-14T16:54:31.367Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.367Z] [unzip] Writing file: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2025-10-14T16:54:31.368Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-10-14T16:54:31.368Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-10-14T16:54:31.368Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.368Z] [unzip] Writing file: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2025-10-14T16:54:31.369Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.369Z] [unzip] Processing entry: client\assets\
+[debug] [2025-10-14T16:54:31.369Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2025-10-14T16:54:31.370Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-10-14T16:54:31.370Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2025-10-14T16:54:31.370Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-10-14T16:54:31.370Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2025-10-14T16:54:31.382Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-10-14T16:54:31.382Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2025-10-14T16:54:31.382Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-10-14T16:54:31.383Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2025-10-14T16:54:31.385Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-10-14T16:54:31.385Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2025-10-14T16:54:31.385Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-10-14T16:54:31.386Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2025-10-14T16:54:31.435Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.435Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-10-14T16:54:31.435Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2025-10-14T16:54:31.436Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-10-14T16:54:31.436Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-10-14T16:54:31.436Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2025-10-14T16:54:31.436Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2025-10-14T16:54:31.438Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.438Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-10-14T16:54:31.438Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2025-10-14T16:54:31.438Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-10-14T16:54:31.438Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-10-14T16:54:31.438Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2025-10-14T16:54:31.438Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2025-10-14T16:54:31.440Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.440Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-10-14T16:54:31.440Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2025-10-14T16:54:31.440Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-10-14T16:54:31.440Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-10-14T16:54:31.441Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.441Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-10-14T16:54:31.442Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-10-14T16:54:31.442Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-10-14T16:54:31.442Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.443Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-10-14T16:54:31.444Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-10-14T16:54:31.444Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-10-14T16:54:31.444Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.444Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-10-14T16:54:31.445Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-10-14T16:54:31.445Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-10-14T16:54:31.445Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.446Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-10-14T16:54:31.446Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-10-14T16:54:31.447Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-10-14T16:54:31.447Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.447Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-10-14T16:54:31.448Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-10-14T16:54:31.448Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-10-14T16:54:31.448Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.448Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-10-14T16:54:31.449Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-10-14T16:54:31.450Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-10-14T16:54:31.450Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.450Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-10-14T16:54:31.451Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-10-14T16:54:31.451Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-10-14T16:54:31.451Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.451Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-10-14T16:54:31.452Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-10-14T16:54:31.452Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-10-14T16:54:31.452Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.452Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-10-14T16:54:31.454Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-10-14T16:54:31.454Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-10-14T16:54:31.454Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.454Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-10-14T16:54:31.455Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-10-14T16:54:31.455Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-10-14T16:54:31.455Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.455Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-10-14T16:54:31.456Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-10-14T16:54:31.456Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-10-14T16:54:31.456Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.456Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-10-14T16:54:31.457Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-10-14T16:54:31.457Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-10-14T16:54:31.457Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-10-14T16:54:31.458Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-10-14T16:54:31.459Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-10-14T16:54:31.459Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-10-14T16:54:31.459Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.459Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2025-10-14T16:54:31.466Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-10-14T16:54:31.467Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-10-14T16:54:31.467Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-10-14T16:54:31.467Z] [unzip] Writing file: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2025-10-14T16:54:31.468Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-10-14T16:54:31.468Z] [unzip] Processing entry: server\
+[debug] [2025-10-14T16:54:31.469Z] [unzip] mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2025-10-14T16:54:31.469Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-10-14T16:54:31.469Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-10-14T16:54:31.469Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-10-14T16:54:31.470Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2025-10-14T16:54:31.481Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-10-14T16:54:31.481Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-10-14T16:54:31.481Z] [unzip] else mkdir: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-10-14T16:54:31.482Z] [unzip] deflating: C:\Users\jatan\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[debug] [2025-10-14T16:54:31.496Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2025-10-14T16:54:31.505Z] Validating nodejs source
+[debug] [2025-10-14T16:54:32.668Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:54:32.668Z] Building nodejs source
+[debug] [2025-10-14T16:54:32.669Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:54:32.671Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:54:32.678Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8945
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:54:33.655Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:54:37.687Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting    │ 127.0.0.1:5000 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-10-14T16:55:51.337Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:55:52.340Z] Validating nodejs source
+[debug] [2025-10-14T16:55:53.110Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:55:53.110Z] Building nodejs source
+[debug] [2025-10-14T16:55:53.111Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:55:53.112Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:55:53.120Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-10-14T16:55:53.128Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8773
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:55:53.700Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[debug] [2025-10-14T16:55:54.132Z] Validating nodejs source
+[debug] [2025-10-14T16:55:55.232Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:55:55.232Z] Building nodejs source
+[debug] [2025-10-14T16:55:55.232Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:55:55.234Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:55:55.243Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8560
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:55:55.878Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:56:32.425Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:56:33.433Z] Validating nodejs source
+[debug] [2025-10-14T16:56:34.208Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:56:34.208Z] Building nodejs source
+[debug] [2025-10-14T16:56:34.209Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:56:34.211Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:56:34.225Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8346
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:56:34.982Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:56:49.293Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:56:50.306Z] Validating nodejs source
+[debug] [2025-10-14T16:56:51.037Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:56:51.037Z] Building nodejs source
+[debug] [2025-10-14T16:56:51.037Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:56:51.039Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:56:51.045Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8329
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:56:51.652Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:57:14.747Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:57:15.749Z] Validating nodejs source
+[debug] [2025-10-14T16:57:16.424Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:57:16.424Z] Building nodejs source
+[debug] [2025-10-14T16:57:16.424Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:57:16.425Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:57:16.431Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8772
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:57:16.993Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:58:01.589Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:58:02.593Z] Validating nodejs source
+[debug] [2025-10-14T16:58:03.335Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:58:03.335Z] Building nodejs source
+[debug] [2025-10-14T16:58:03.335Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:58:03.336Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:58:03.342Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8587
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:58:03.954Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:58:27.379Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:58:28.393Z] Validating nodejs source
+[debug] [2025-10-14T16:58:29.083Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:58:29.083Z] Building nodejs source
+[debug] [2025-10-14T16:58:29.083Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:58:29.084Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:58:29.092Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8823
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:58:29.701Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:58:37.079Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:58:38.084Z] Validating nodejs source
+[debug] [2025-10-14T16:58:38.810Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:58:38.811Z] Building nodejs source
+[debug] [2025-10-14T16:58:38.811Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:58:38.812Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:58:38.817Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8941
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:58:39.399Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T16:58:44.580Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T16:58:45.581Z] Validating nodejs source
+[debug] [2025-10-14T16:58:46.253Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T16:58:46.253Z] Building nodejs source
+[debug] [2025-10-14T16:58:46.253Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T16:58:46.254Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T16:58:46.259Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8103
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T16:58:46.828Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:00:05.929Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:00:06.935Z] Validating nodejs source
+[debug] [2025-10-14T17:00:07.588Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:00:07.588Z] Building nodejs source
+[debug] [2025-10-14T17:00:07.588Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:00:07.589Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:00:07.595Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8417
+
+[error] C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:26
+const { onRequest } = require("firebase-functions/v2/https");
+        ^
+
+SyntaxError: Identifier 'onRequest' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:00:07.797Z] Got response code 400; body Failed to generate manifest from function source: Identifier 'onRequest' has already been declared
+[debug] [2025-10-14T17:00:09.498Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:00:10.502Z] Validating nodejs source
+[debug] [2025-10-14T17:00:11.216Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:00:11.217Z] Building nodejs source
+[debug] [2025-10-14T17:00:11.217Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:00:11.218Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:00:11.223Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8739
+
+[error] C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:26
+const { onRequest } = require("firebase-functions/v2/https");
+        ^
+
+SyntaxError: Identifier 'onRequest' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:00:11.416Z] Got response code 400; body Failed to generate manifest from function source: Identifier 'onRequest' has already been declared
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:00:19.962Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:00:20.965Z] Validating nodejs source
+[debug] [2025-10-14T17:00:21.683Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:00:21.683Z] Building nodejs source
+[debug] [2025-10-14T17:00:21.683Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:00:21.685Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:00:21.692Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8155
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:00:22.307Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:00:33.714Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:00:34.725Z] Validating nodejs source
+[debug] [2025-10-14T17:00:35.543Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:00:35.543Z] Building nodejs source
+[debug] [2025-10-14T17:00:35.543Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:00:35.544Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:00:35.550Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-10-14T17:00:35.556Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8504
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:00:36.189Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[debug] [2025-10-14T17:00:36.559Z] Validating nodejs source
+[debug] [2025-10-14T17:00:37.340Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:00:37.340Z] Building nodejs source
+[debug] [2025-10-14T17:00:37.340Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:00:37.341Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:00:37.347Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8782
+
+[error] ReferenceError: FirebaseFunctionsTest is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:00:37.971Z] Got response code 400; body Failed to generate manifest from function source: FirebaseFunctionsTest is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:01:51.823Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:01:51.972Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:01:52.987Z] Validating nodejs source
+[debug] [2025-10-14T17:01:53.738Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:01:53.739Z] Building nodejs source
+[debug] [2025-10-14T17:01:53.739Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:01:53.740Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:01:53.746Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8139
+
+[error] ReferenceError: functions is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:01:54.363Z] Got response code 400; body Failed to generate manifest from function source: functions is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:02:01.333Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:02:02.340Z] Validating nodejs source
+[debug] [2025-10-14T17:02:02.976Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:02:02.976Z] Building nodejs source
+[debug] [2025-10-14T17:02:02.977Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:02:02.978Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:02:02.984Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8188
+
+[error] ReferenceError: functions is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:02:03.546Z] Got response code 400; body Failed to generate manifest from function source: functions is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:02:27.299Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:02:28.301Z] Validating nodejs source
+[debug] [2025-10-14T17:02:29.039Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:02:29.039Z] Building nodejs source
+[debug] [2025-10-14T17:02:29.039Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:02:29.041Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:02:29.049Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8869
+
+[error] ReferenceError: functions is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:29:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:02:29.659Z] Got response code 400; body Failed to generate manifest from function source: functions is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-10-14T17:02:43.061Z] File C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\jatan\\OneDrive\\Desktop\\AmazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-10-14T17:02:44.077Z] Validating nodejs source
+[debug] [2025-10-14T17:02:44.810Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-10-14T17:02:44.811Z] Building nodejs source
+[debug] [2025-10-14T17:02:44.811Z] Failed to find version of module node: reached end of search path C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-10-14T17:02:44.812Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-14T17:02:44.819Z] Found firebase-functions binary at 'C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8683
+
+[error] ReferenceError: functions is not defined
+    at Object.<anonymous> (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\index.js:30:15)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at loadModule (C:\Users\jatan\OneDrive\Desktop\AmazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+
+[debug] [2025-10-14T17:02:45.431Z] Got response code 400; body Failed to generate manifest from function source: functions is not defined
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] i  hosting: 127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] "GET / HTTP/1.1" 200 328 "http://127.0.0.1:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] \"GET / HTTP/1.1\" 200 328 \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] "GET /static/css/main.603408e0.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] \"GET /static/css/main.603408e0.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] "GET /static/js/main.4961da72.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Oct/2025:17:06:16 +0000] \"GET /static/js/main.4961da72.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [14/Oct/2025:17:06:17 +0000] "GET /favicon.ico HTTP/1.1" 200 328 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [14/Oct/2025:17:06:17 +0000] \"GET /favicon.ico HTTP/1.1\" 200 328 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\""}}
