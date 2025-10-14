@@ -25,9 +25,9 @@ function Header() {
         { /* Logo  */}
       </div>
       <div className = "header_nav"> 
-        <Link to = '/login'>
+        <Link to = '/login'>  
         <div onClick={handleAuthentication} className = "header_option"> 
-          <span className = "header_optionLineOne"> Hello {user? user.email : 'Guest'} </span>
+          <span className = "header_optionLineOne"> Hello, <strong> {user? user.email : 'Guest'} </strong> </span>
           <span className = "header_optionLineTwo"> <strong> {user ? 'Sign Out': 'Sign In'} </strong> </span>
         </div>
         </Link>
