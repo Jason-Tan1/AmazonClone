@@ -10,7 +10,7 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Footer from "./Footer";
 import { loadStripe} from "@stripe/stripe-js";
-import {Elements} from "@stripe/react-stripe-js"
+import {Elements} from "@stripe/react-stripe-js" 
 
 //Loads stripe, PUBLIC KEY
 const promise = loadStripe('pk_test_51SIAJvCDAJ5GCVwxGbanPGWNJhLU36QEaqaqAHlpGxu9vWcKWfuNiFsY1QywVbkvogTou4JQUQh4kDrpauyRX9bp00jUYIUTzd');

@@ -1,18 +1,40 @@
-require('dotenv').config();
+const {onRequest} = require("firebase-functions/https");
+const logger = require("firebase-functions/logger");
+
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY); // Securely using env variable
+const stripe = require("stripe")(
+  "sk_test_51SIAJvCDAJ5GCVwxmiKAt7DaNH0rdAjoMgVcufkZbi3MzE22M8rK5NoBd9rxSh2AbeYmGNWVXowTTZXiWyO3b2VI00PiJMdHw7"
+);
 
-// App config
+// API
+
+// - App config
 const app = express();
 
-// Middleware
+// - Middlewares
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-// Routes
-app.get("/", (req, res) => res.status(200).send("hello world"));
+// - API routes
+app.get("/", (request, response) => response.status(200).send("hello world"));
 
-// Expose API to Firebase
+app.post("/payments/create", async (request, response) => {
+  const total = request.query.total;
+
+  console.log("Payment Request Recieved!", total);
+
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: total,
+    currency: "usd",
+  });
+
+  // OK - Created
+  response.status(201).send({
+    clientSecret: paymentIntent.client_secret,
+  });
+});
+
+// - Listen command
 exports.api = functions.https.onRequest(app);

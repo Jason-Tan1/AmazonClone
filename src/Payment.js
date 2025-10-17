@@ -6,7 +6,7 @@ import { Link, useNavigate} from 'react-router-dom';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
-import axios from 'axios';
+import axios from './axios';
 
 function Payment() {
  const [{basket, user}, dispatch] = useStateValue();
@@ -33,6 +33,8 @@ function Payment() {
 
     getClientSecret();
  }, [basket])
+ 
+console.log("Total:", getBasketTotal(basket) * 100);
 
  const handleSubmit = async(e) => {
     e.preventDefault();
