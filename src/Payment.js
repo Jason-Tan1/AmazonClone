@@ -14,25 +14,26 @@ function Payment() {
  const [disabled, setDisabled] = useState(true);
  const [processing, setProcessing] = useState("");
  const [succeeded, setSucceeded] = useState(false);
- const [clientSecret, setClientSecret] = useState(false); //How Stripe knows what you have to pay
+ const [clientSecret, setClientSecret] = useState(""); //How Stripe knows what you have to pay
 
  const navigate = useNavigate();
  const stripe = useStripe();
  const elements = useElements();
 
 
- useEffect(() => {
-    const getClientSecret = async () => {
-      const response = await axios( {
-        method: 'post',
-        //Stripe expects the total in a currencies sub units
-        url: `/payments/create?total=${getBasketTotal(basket) * 100}`
-      })
-      setClientSecret(response.data.clientSecret)
-    }
+useEffect(() => {
+const getClientSecret = async () => {
+  const total = Math.round(getBasketTotal(basket) * 100);
+  console.log("Sending total to backend:", total); // debug
 
-    getClientSecret();
- }, [basket])
+  const response = await axios.post(`/payments/create?total=${total}`);
+  setClientSecret(response.data.clientSecret);
+};
+
+if (basket.length > 0) {
+  getClientSecret();
+}
+}, [basket]);
  
 console.log("Total:", getBasketTotal(basket) * 100);
 

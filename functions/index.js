@@ -1,11 +1,10 @@
+require ("dotenv").config();
 const {onRequest} = require("firebase-functions/https");
 const logger = require("firebase-functions/logger");
-
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-
 
 // API
 
@@ -20,7 +19,11 @@ app.use(express.json());
 app.get("/", (request, response) => response.status(200).send("hello world"));
 
 app.post("/payments/create", async (request, response) => {
-  const total = request.query.total;
+  const total = parseInt(request.query.total);
+
+  if (!total || isNaN(total)) {
+    return response.status(400).send({ error: "Missing or invalid total amount" });
+  }
 
   console.log("Payment Request Recieved!", total);
 
