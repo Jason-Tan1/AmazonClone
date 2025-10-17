@@ -4,9 +4,8 @@ const logger = require("firebase-functions/logger");
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51SIAJvCDAJ5GCVwxmiKAt7DaNH0rdAjoMgVcufkZbi3MzE22M8rK5NoBd9rxSh2AbeYmGNWVXowTTZXiWyO3b2VI00PiJMdHw7"
-);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
 
 // API
 
