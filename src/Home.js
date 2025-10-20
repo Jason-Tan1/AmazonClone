@@ -10,6 +10,7 @@ function Home() {
         
         <div className = "home_row">
           <Product title = 'The Lean Startup' 
+          id="prod1"
           price = {29.99} 
           image = 'https://m.media-amazon.com/images/I/71sxTeZIi6L._UF1000,1000_QL80_.jpg'
           rating = {5} />
@@ -21,16 +22,19 @@ function Home() {
 
         <div className = "home_row">
         <Product 
+        id="prod2"
         title="Samsung Curved LED Gaming Monitor"
         price={199.99}
         image="https://images-na.ssl-images-amazon.com/images/I/81Zt42ioCgL._AC_SX450_.jpg"
         rating={3}/>
         <Product 
+        id="prod3"
         title="Amazon Echo (3rd Gen)"
         price={98.99}
         image="https://images-na.ssl-images-amazon.com/images/I/6182S7MYC2L._AC_SX425_.jpg"
         rating={5}/>
         <Product 
+        id="prod4"
         title="Wilson Evolution Black Edition Official Basketball"
         price={98.99}
         image="https://cdn.shoplightspeed.com/shops/641570/files/63496261/300x250x2/wilson-wilson-basketball-evolution-285-game-ball-s.jpg"
@@ -39,6 +43,7 @@ function Home() {
 
         <div className = "home_row">
           <Product
+          id="prod5"
           title="Samsung 49-Inch Gaming Monitor - Super UltraWide Dual WQHD"
           price={1094.98}
           image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"

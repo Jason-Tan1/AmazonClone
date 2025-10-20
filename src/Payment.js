@@ -7,12 +7,14 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
 import axios from './axios';
+import { doc, collection, setDoc } from "firebase/firestore";
+import { db } from "./firebase"; 
 
 function Payment() {
  const [{basket, user}, dispatch] = useStateValue();
  const [error, setError] = useState(null);
  const [disabled, setDisabled] = useState(true);
- const [processing, setProcessing] = useState("");
+ const [processing, setProcessing] = useState(false);
  const [succeeded, setSucceeded] = useState(false);
  const [clientSecret, setClientSecret] = useState(""); //How Stripe knows what you have to pay
 
@@ -37,28 +39,53 @@ if (basket.length > 0) {
  
 console.log("Total:", getBasketTotal(basket) * 100);
 
- const handleSubmit = async(e) => {
-    e.preventDefault();
-    setProcessing(true);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setProcessing(true);
 
-    const payload = await stripe.confirmCardPayment(clientSecret, {
-      payment_method: {
-        card: elements.getElement(CardElement)
-      }
-    }).then(({paymentIntent}) => {
-      // Payment Intent = Payment Confirmation
+  if (!stripe || !elements) {
+    return;
+  }
+  setProcessing(true);
+  const payload = await stripe.confirmCardPayment(clientSecret, {
+    payment_method: {
+      card: elements.getElement(CardElement)
+    }
+  });
 
-      setSucceeded(true);
-      setError(null);
-      setProcessing(false);
+  if (payload.error) {
+    setError(`Payment failed: ${payload.error.message}`);
+    setProcessing(false);
+    return;
+  } else {
+    const paymentIntent = payload.paymentIntent;
 
-      dispatch( {
-        type: 'EMPTY_BASKET'
-      })
+    if (!user?.uid) {
+    setError("User is not logged in");
+    setProcessing(false);
+    return;
+    }
+    const orderRef = doc(collection(db, "users", user?.uid, "orders"), paymentIntent.id);
 
-      navigate('/orders', { replace: true });
-    })
- }
+    //Debugging Code Ignore
+    console.log("basket:", basket);
+    console.log("amount:", paymentIntent.amount);
+    console.log("created:", paymentIntent.created);
+
+    await setDoc(orderRef, {
+      basket: basket,
+      amount: paymentIntent.amount,
+      created: paymentIntent.created,
+    });
+
+    setSucceeded(true);
+    setError(null);
+    setProcessing(false);
+
+    dispatch({ type: "EMPTY_BASKET" });
+    navigate("/orders", { replace: true });
+  }
+};
 
   const handleChange = e => {
     setDisabled(e.empty);
@@ -124,7 +151,7 @@ console.log("Total:", getBasketTotal(basket) * 100);
                   thousandSeparator={true}
                   prefix={"$"}
                 />
-                <button disabled={processing || disabled || succeeded}> 
+                <button type = "submit" disabled={processing || disabled || succeeded}> 
                   <span> {processing ? <p> Processing </p> : "Buy Now" } </span>
                 </button>
               </div>
