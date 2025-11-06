@@ -1,4 +1,4 @@
-A full-stack Amazon clone built with React, Firebase, and Stripe. This responsive e-commerce web app replicates core features of Amazon, including:
+A full-stack E-commerce platform built with React, Firebase, and Stripe. This responsive e-commerce web app replicates core features of Amazon, including:
 - User Authentication (via Firebase) - Users can sign up and log in securely with Firebase Auth
 - Dynamic Shopping Cart - Add, remove, and update items
 - Stripe Payment Integration - Stripe integration to handle payment processing (In test mode)
@@ -9,5 +9,6 @@ Tech Stack:
 - Frontend: ReactJS • JavaScript • HTML • CSS
 - Backend: Firebase • Node.js • Express.js
 - Payments: Stripe API
+
 
 
